@@ -11,10 +11,19 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ["Tiny5", "sans-serif"],
+        mono: ["var(--font-geist-mono)"]
       },
-      // Anda dapat memperluas tema di sini, misalnya dengan warna kustom
+      // Luna colour palette (Windows XP)
+      colors: {
+        luna: {
+          blue: "#0A246A",  // title bar blue
+          blueLight: "#3A6EA5",
+          silver: "#C0C0C0", // window background
+          silverLight: "#E3E3E3",
+          greenStart: "#4CA42C" // start button
+        }
+      },
       // colors: {
       //   primary: '#your-primary-color',
       //   secondary: '#your-secondary-color',

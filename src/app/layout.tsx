@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// Tiny5 is loaded via CSS import in globals.css. No font imports needed here.
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata: Metadata = {
-  title: "Next.js Boilerplate Gen2 - Project Starter",
-  description: "A feature-rich Next.js boilerplate with TypeScript, Tailwind CSS, ESLint, Prettier, Supabase integration, and more. Get your project up and running quickly!",
+  title: "Gerry Moeis Portfolio - Windows XP Edition",
+  description: "The creative Windows-XP-styled personal portfolio of Gerry Moeis – showcasing projects, blog and contact in a nostalgic desktop experience.",
   // Anda bisa menambahkan metadata lain di sini seperti openGraph, icons, dll.
   // openGraph: {
   //   title: 'Next.js Boilerplate Gen2',
@@ -34,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="tiny5-regular antialiased"
       >
         {children}
       </body>
